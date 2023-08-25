@@ -61,8 +61,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -25%);
-  height: 20vw;
-  width: 20vw;
+  height: 10vw;
+  width: 10vw;
 }
 
 .flames {
@@ -84,27 +84,27 @@
   border-radius: 1vw;
 }
 
-.flames:nth-child(2n + 1) {
+.flame1, .flame3 {
   animation: flameodd var(--flame-anim-time) ease-in infinite;
 }
 
-.flames:nth-child(2n) {
+.flame0, .flame2 {
   animation: flameeven var(--flame-anim-time) ease-in infinite;
 }
 
-.flames:nth-child(1) {
+.flame0 {
   animation-delay: 0s;
 }
 
-.flames:nth-child(2) {
+.flame1 {
   animation-delay: calc(var(--flame-anim-time) / 4);
 }
 
-.flames:nth-child(3) {
+.flame2 {
   animation-delay: calc(var(--flame-anim-time) / 4 * 2);
 }
 
-.flames:nth-child(4) {
+.flame3 {
   animation-delay: calc(var(--flame-anim-time) / 4 * 3);
 }
 
