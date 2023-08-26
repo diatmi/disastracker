@@ -18,20 +18,26 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
 </head>
 
 <body style="margin: 0; height: 100vh; overflow: hidden">
   <div style="width: 100%; height: 100%; background-color: var(--spacehaze-dark)">
     <div class="enable-vertical-center gt-pressura" style="color: var(--spacehaze-light); justify-content: center; translate: 0 36vh">
-      <div class="text-lg">disastracker</div>
+      <div class="text-lg">DisasTracker</div>
     </div>
     <div class="enable-vertical-center gt-pressura" style="color: var(--spacehaze-pink); justify-content: center; translate: 0 38vh">
       <div class="text-md">be informed about natural disasters</div>
     </div>
   </div>
   <div
-    class="fire"
-    onclick="toggleMap()">
+    class="fire">
     <div class="flames">
       <div class="flame0 flame"></div>
       <div class="flame1 flame"></div>
@@ -39,17 +45,9 @@
       <div class="flame3 flame"></div>
     </div>
   </div>
+  <!-- Contains the entire map-->
   <div id="map-container">
-    <div class="map-top-bar">
-      <div class="map-top-bar-left-text">
-        <div class="enable-vertical-center gt-pressura text-md" style="padding-left: 1rem;align-items: center">
-          disasters
-        </div>
-      </div>
-      <div class="map-top-bar-right-text" style="padding-right: 0.75rem; align-items: center">
-        <img id="map-top-bar-close-button" onclick="toggleMap()" src="img/x.svg" style="width: 2.5rem; height: 2.5rem" alt="X">
-      </div>
-    </div>
+
   </div>
 </body>
 
