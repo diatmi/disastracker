@@ -12,4 +12,19 @@ class Screen {
   static GOOD_NEWS_DETAIL = next();
 }
 
+const HIDDEN = 'hidden', VISIBLE = 'visible';
+let MapContainer = document.getElementById('map-container');
 
+function reload() {
+  MapContainer.style.visibility = HIDDEN;
+}
+
+function toggleMap() {
+  if (MapContainer.style.visibility === HIDDEN) {
+    MapContainer.style.visibility = VISIBLE;
+  } else {
+    MapContainer.style.visibility = HIDDEN;
+  }
+}
+
+reload();
