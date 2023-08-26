@@ -56,6 +56,8 @@
 
 .map-top-bar {
   height: 4rem;
+  display: flex;
+  flex-direction: row;
   box-shadow: var(--spacehaze-dark) 0 0 0.5vw;
 }
 
@@ -71,6 +73,10 @@
   width: 50%;
   height: 100%;
   flex-direction: row-reverse;
+}
+
+#map-top-bar-close-button:hover {
+  cursor: pointer;
 }
 
 .happy-face {
@@ -89,6 +95,10 @@
   transform: translate(-50%, -25%);
   height: 10vw;
   width: 10vw;
+}
+
+.fire:hover {
+  cursor: pointer;
 }
 
 .flames {
