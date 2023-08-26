@@ -16,6 +16,7 @@ const HIDDEN = 'hidden', VISIBLE = 'visible';
 let MapContainer = document.getElementById('map-container');
 
 function reload() {
+  console.log(MapContainer)
   MapContainer.style.visibility = HIDDEN;
 }
 
